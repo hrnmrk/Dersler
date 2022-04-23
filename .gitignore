@@ -1,0 +1,182 @@
+using System;
+
+namespace HarunC
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //int Videolar = 40;
+            //int[] Sayilar1 = new int[5];
+            //Sayilar1[0] = 15;
+            //Sayilar1[1] = 25;
+            //Sayilar1[2] = 35;
+            //Sayilar1[3] = 45;
+            //Sayilar1[4] = 55;
+            //for (int itt = 0; itt < Sayilar1.Length; itt++)
+            //{
+            //    if (Sayilar1.Length == 0)
+            //    {
+            //        Console.WriteLine(Sayilar1[itt]);
+            //    }
+            //}
+            //Console.WriteLine("Gizem Sevişelim Mi?");
+            //if (Videolar == 40)
+            //{
+            //    Console.WriteLine("Evet");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("HAYIR");
+            //}
+
+            //int taksi = 5;
+            //int minibus = 6;
+            //double ticari = 6.5;
+            //int aracTipi;
+            //int kalinanSaat;
+            //double ucret;
+            //Console.WriteLine("Lütfen araç tipi giriniz. 1= Taksi, 2= Minibus, 3= Ticari");
+
+            //aracTipi = Int32.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Lütfen kaç saat kaldığınızı giriniz");
+
+            //kalinanSaat = Int32.Parse(Console.ReadLine());
+            //if (aracTipi == 1)
+            //{
+            //    ucret = taksi + ((kalinanSaat - 1) * (taksi + (taksi * 0.2)));
+            //    Console.WriteLine(ucret);
+            //}
+            //else if (aracTipi == 2)
+            //{
+            //    ucret = minibus + ((kalinanSaat - 1) * (minibus + (minibus * 0.215)));
+            //    Console.WriteLine(ucret);
+            //}
+            //else if (aracTipi == 3)
+            //{
+            //    ucret = ticari + ((kalinanSaat - 1) * (ticari + (ticari * 0.25)));
+            //    Console.WriteLine(ucret);
+            //}
+            //else Console.WriteLine("Lütfen araç tipini doğru giriniz!");
+
+
+
+
+            //double odenecekTutar = 0;
+            //int kalinanSure = 0, aracTipi = 0;
+            //Console.WriteLine("Araç Tipleri Taksi : 1, Minübüs : 2, Ticari : 3");
+            //Console.Write("Lütfen Araç Tipini Giriniz : ");
+            //aracTipi = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Kalınan Süreyi Giriniz : ");
+            //kalinanSure = Convert.ToInt32(Console.ReadLine());
+            //if (kalinanSure > 1)
+            //{
+            //    for (int i = 1; i <= kalinanSure; i++)
+            //    {
+            //        if (i == 1)
+            //        {
+            //            if (aracTipi == 1) { odenecekTutar = i * 5; }
+            //            else if (aracTipi == 2) { odenecekTutar = i * 6; }
+            //            else if (aracTipi == 3) { odenecekTutar = i * 6.5; }
+            //        }
+            //        else
+            //        {
+
+            //            kalinanSure -= 1;
+            //            if (aracTipi == 1) { odenecekTutar += kalinanSure * 5 * 1.20; }
+            //            else if (aracTipi == 2) { odenecekTutar += kalinanSure * 6 * 1.215; }
+            //            else if (aracTipi == 3) { odenecekTutar += kalinanSure * 6.5 * 1.25; }
+            //        }
+            //    }
+
+
+            //}
+
+
+            //else
+            //{
+
+            //    if (aracTipi == 1) { odenecekTutar = kalinanSure * 5; }
+            //    else if (aracTipi == 2) { odenecekTutar = kalinanSure * 6; }
+            //    else if (aracTipi == 3) { odenecekTutar = kalinanSure * 6.5; }
+
+
+            //}
+            //Console.WriteLine("Ödenecek Tutar : {0} TL", odenecekTutar);
+
+
+            //int maas;
+            //double zamOrani;
+
+
+            //Console.WriteLine("Maaş");
+            //maas= Convert.ToInt32( Console.ReadLine());
+            //Console.WriteLine("zamOrani");
+            //zamOrani= Convert.ToDouble ( Console.ReadLine());
+
+            //double sonuc = maas+(maas* (zamOrani/100));
+            //Console.WriteLine(sonuc);
+
+
+
+
+            //Random rnd = new Random();
+            //int[] sayilar = new int[20];
+            //int toplam = 0;
+            //int aritmatikOrtalama;
+
+
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    sayilar[i] = rnd.Next (0, 20);
+            //}
+            //Console.WriteLine(sayilar[i]);
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    toplam += i;
+            //}
+            //aritmatikOrtalama = toplam / 20;
+
+
+
+            //Console.WriteLine(toplam);
+
+
+            //int vize;
+            //int final;
+            //int[] puan = new int[100];
+            //int basarili; 
+            //int basarisiz;
+            //double ortalama;
+            
+            //Console.WriteLine("Lütfen vize notunu giriniz");
+            //vize = Convert.ToInt32 ( Console.ReadLine());
+            //if (vize < 0)
+            //{
+            //    Console.WriteLine("Lütfen geçerli bir sayı giriniz");
+            //}
+            //else if (vize > 100)
+            //{
+            //    Console.WriteLine("Lütfen geçerli bir sayı giriniz");
+            //}
+            
+            //Console.WriteLine("Lütfen final notunu giriniz");
+            //final = Convert.ToInt32(Console.ReadLine());
+
+            //ortalama = (vize + final) / 2;
+
+            //if (ortalama >= 75 )
+            //{
+            //    Console.WriteLine("Başarılı");
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Başarısız");
+            //}
+
+
+        }
+    }
+}
