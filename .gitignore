@@ -45,7 +45,7 @@ namespace Denemeler
                 kücük = sayi3;
             }
 
-            Console.WriteLine("En büyük ve en küçük sayının toplamı ={0}", kücük + büyük);
+            Console.WriteLine("En büyük ve en küçük sayının toplamı ={0}" , kücük + büyük);
             Console.ReadLine();
             //----------------------------------------------------------------------------------------
 
@@ -72,17 +72,17 @@ namespace Denemeler
             if (aracTipi == 1)
             {
                 ucret = taksi + ((kalinanSaat - 1) * (taksi + (taksi * 0.2)));
-                Console.WriteLine("Ödemeniz gereken ücret = "+ ucret);
+                Console.WriteLine("Ödemeniz gereken ücret ={0}", ucret);
             }
             else if (aracTipi == 2)
             {
                 ucret = minibus + ((kalinanSaat - 1) * (minibus + (minibus * 0.215)));
-                Console.WriteLine("Ödemeniz gereken ücret = "+ ucret);
+                Console.WriteLine("Ödemeniz gereken ücret ={0} ", ucret);
             }
             else if (aracTipi == 3)
             {
                 ucret = ticari + ((kalinanSaat - 1) * (ticari + (ticari * 0.25)));
-                Console.WriteLine("Ödemeniz gereken ücret = "+  ucret);
+                Console.WriteLine("Ödemeniz gereken ücret ={0} ",  ucret);
             }
             else Console.WriteLine("Lütfen araç tipini doğru giriniz!");
 
