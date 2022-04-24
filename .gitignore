@@ -1,70 +1,96 @@
 using System;
 
-namespace HarunC
+namespace Denemeler
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //int Videolar = 40;
-            //int[] Sayilar1 = new int[5];
-            //Sayilar1[0] = 15;
-            //Sayilar1[1] = 25;
-            //Sayilar1[2] = 35;
-            //Sayilar1[3] = 45;
-            //Sayilar1[4] = 55;
-            //for (int itt = 0; itt < Sayilar1.Length; itt++)
-            //{
-            //    if (Sayilar1.Length == 0)
-            //    {
-            //        Console.WriteLine(Sayilar1[itt]);
-            //    }
-            //}
-            //Console.WriteLine("Gizem Sevişelim Mi?");
-            //if (Videolar == 40)
-            //{
-            //    Console.WriteLine("Evet");
-            //}
-            //else
-            //{
-            //    Console.WriteLine("HAYIR");
-            //}
+            //----------------------------------------------------------------------------------------------
+            // Örnek 6:  Kullanıcı tarafından girilen üç sayıdan en büyük ile en küçük sayıyı toplayıp,
+            // toplam sonucu ekrana yazdıran programı yazınız.
 
-            //int taksi = 5;
-            //int minibus = 6;
-            //double ticari = 6.5;
-            //int aracTipi;
-            //int kalinanSaat;
-            //double ucret;
-            //Console.WriteLine("Lütfen araç tipi giriniz. 1= Taksi, 2= Minibus, 3= Ticari");
+            int sayi1, sayi2, sayi3, büyük, kücük;
 
-            //aracTipi = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Lütfen bir sayı giriniz");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lütfen bir sayı giriniz");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Lütfen bir sayı giriniz");
+            sayi3 = Convert.ToInt32(Console.ReadLine());
 
-            //Console.WriteLine("Lütfen kaç saat kaldığınızı giriniz");
+            if (sayi1 > sayi2 && sayi1 > sayi3)
+            {
+                büyük = sayi1;
+            }
+            else if (sayi2 > sayi3)
+            {
+                büyük = sayi2;
+            }
+            else
+            {
+                büyük = sayi3;
+            }
+            
+            if (sayi1 < sayi2 && sayi1 < sayi3)
+            {
+                kücük = sayi1;
+            }
+            else if (sayi2 < sayi3)
+            {
+                kücük = sayi2;
+            }
+            else
+            {
+                kücük = sayi3;
+            }
 
-            //kalinanSaat = Int32.Parse(Console.ReadLine());
-            //if (aracTipi == 1)
-            //{
-            //    ucret = taksi + ((kalinanSaat - 1) * (taksi + (taksi * 0.2)));
-            //    Console.WriteLine(ucret);
-            //}
-            //else if (aracTipi == 2)
-            //{
-            //    ucret = minibus + ((kalinanSaat - 1) * (minibus + (minibus * 0.215)));
-            //    Console.WriteLine(ucret);
-            //}
-            //else if (aracTipi == 3)
-            //{
-            //    ucret = ticari + ((kalinanSaat - 1) * (ticari + (ticari * 0.25)));
-            //    Console.WriteLine(ucret);
-            //}
-            //else Console.WriteLine("Lütfen araç tipini doğru giriniz!");
+            Console.WriteLine("En büyük ve en küçük sayının toplamı ={0}", kücük + büyük);
+            Console.ReadLine();
+            //----------------------------------------------------------------------------------------
 
+            //Örnek 4: Bir otoparka park eden taksinin 1 saati 5TL, minibüsün 1 saati 6TL, ticari aracın 1 saati 6.5TL dir.
+            //Taksi 1 saatten sonraki her saat başı için %20 daha fazla,
+            //minibüs 1 saatten sonraki her saat başı için toplamda %21.5 ve
+            //ticari araç 1 saatten sonraki her saat başı için toplamda %25 daha fazla ödeme yapmaktadır.
+            //Buna göre klavyeden girilen araba tipi ve kalınan saat bilgisi girildikten sonra
+            //ekrana ödenecek otopark ücretini hesaplayan programın kodlarını yazınız.
 
+            int taksi = 5;
+            int minibus = 6;
+            double ticari = 6.5;
+            int aracTipi;
+            int kalinanSaat;
+            double ucret;
+            Console.WriteLine("Lütfen araç tipi giriniz. 1= Taksi, 2= Minibus, 3= Ticari");
 
+            aracTipi = Int32.Parse(Console.ReadLine());
+
+            Console.WriteLine("Lütfen kaç saat kaldığınızı giriniz");
+
+            kalinanSaat = Int32.Parse(Console.ReadLine());
+            if (aracTipi == 1)
+            {
+                ucret = taksi + ((kalinanSaat - 1) * (taksi + (taksi * 0.2)));
+                Console.WriteLine("Ödemeniz gereken ücret = "+ ucret);
+            }
+            else if (aracTipi == 2)
+            {
+                ucret = minibus + ((kalinanSaat - 1) * (minibus + (minibus * 0.215)));
+                Console.WriteLine("Ödemeniz gereken ücret = "+ ucret);
+            }
+            else if (aracTipi == 3)
+            {
+                ucret = ticari + ((kalinanSaat - 1) * (ticari + (ticari * 0.25)));
+                Console.WriteLine("Ödemeniz gereken ücret = "+  ucret);
+            }
+            else Console.WriteLine("Lütfen araç tipini doğru giriniz!");
+
+            //------------------------------------------------------------------------------------------
 
             //double odenecekTutar = 0;
-            //int kalinanSure = 0, aracTipi = 0;
+            //int kalinanSure = 0, 
+            //int aracTipi ;
             //Console.WriteLine("Araç Tipleri Taksi : 1, Minübüs : 2, Ticari : 3");
             //Console.Write("Lütfen Araç Tipini Giriniz : ");
             //aracTipi = Convert.ToInt32(Console.ReadLine());
@@ -89,22 +115,42 @@ namespace HarunC
             //            else if (aracTipi == 3) { odenecekTutar += kalinanSure * 6.5 * 1.25; }
             //        }
             //    }
-
-
             //}
-
-
             //else
             //{
-
             //    if (aracTipi == 1) { odenecekTutar = kalinanSure * 5; }
             //    else if (aracTipi == 2) { odenecekTutar = kalinanSure * 6; }
             //    else if (aracTipi == 3) { odenecekTutar = kalinanSure * 6.5; }
-
-
             //}
             //Console.WriteLine("Ödenecek Tutar : {0} TL", odenecekTutar);
 
+            //-----------------------------------------------------------------------------------------
+
+            //int Videolar = 40;
+            //int[] Sayilar1 = new int[5];
+            //Sayilar1[0] = 15;
+            //Sayilar1[1] = 25;
+            //Sayilar1[2] = 35;
+            //Sayilar1[3] = 45;
+            //Sayilar1[4] = 55;
+            //for (int itt = 0; itt < Sayilar1.Length; itt++)
+            //{
+            //    if (Sayilar1.Length == 0)
+            //    {
+            //        Console.WriteLine(Sayilar1[itt]);
+            //    }
+            //}
+            //Console.WriteLine("Gizem Sevişelim Mi?");
+            //if (Videolar == 40)
+            //{
+            //    Console.WriteLine("Evet");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("HAYIR");
+            //}
+
+            //------------------------------------------------------------------------------
 
             //int maas;
             //double zamOrani;
@@ -149,7 +195,7 @@ namespace HarunC
             //int basarili; 
             //int basarisiz;
             //double ortalama;
-            
+
             //Console.WriteLine("Lütfen vize notunu giriniz");
             //vize = Convert.ToInt32 ( Console.ReadLine());
             //if (vize < 0)
@@ -160,7 +206,7 @@ namespace HarunC
             //{
             //    Console.WriteLine("Lütfen geçerli bir sayı giriniz");
             //}
-            
+
             //Console.WriteLine("Lütfen final notunu giriniz");
             //final = Convert.ToInt32(Console.ReadLine());
 
@@ -175,7 +221,6 @@ namespace HarunC
             //{
             //    Console.WriteLine("Başarısız");
             //}
-
 
         }
     }
