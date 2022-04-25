@@ -10,43 +10,43 @@ namespace Denemeler
             // Örnek 6:  Kullanıcı tarafından girilen üç sayıdan en büyük ile en küçük sayıyı toplayıp,
             // toplam sonucu ekrana yazdıran programı yazınız.
 
-            int sayi1, sayi2, sayi3, büyük, kücük;
+            //int sayi1, sayi2, sayi3, büyük, kücük;
 
-            Console.WriteLine("Lütfen bir sayı giriniz");
-            sayi1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Lütfen bir sayı giriniz");
-            sayi2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Lütfen bir sayı giriniz");
-            sayi3 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen bir sayı giriniz");
+            //sayi1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen bir sayı giriniz");
+            //sayi2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen bir sayı giriniz");
+            //sayi3 = Convert.ToInt32(Console.ReadLine());
 
-            if (sayi1 > sayi2 && sayi1 > sayi3)
-            {
-                büyük = sayi1;
-            }
-            else if (sayi2 > sayi3)
-            {
-                büyük = sayi2;
-            }
-            else
-            {
-                büyük = sayi3;
-            }
-            
-            if (sayi1 < sayi2 && sayi1 < sayi3)
-            {
-                kücük = sayi1;
-            }
-            else if (sayi2 < sayi3)
-            {
-                kücük = sayi2;
-            }
-            else
-            {
-                kücük = sayi3;
-            }
+            //if (sayi1 > sayi2 && sayi1 > sayi3)
+            //{
+            //    büyük = sayi1;
+            //}
+            //else if (sayi2 > sayi3)
+            //{
+            //    büyük = sayi2;
+            //}
+            //else
+            //{
+            //    büyük = sayi3;
+            //}
 
-            Console.WriteLine("En büyük ve en küçük sayının toplamı ={0}" , kücük + büyük);
-            Console.ReadLine();
+            //if (sayi1 < sayi2 && sayi1 < sayi3)
+            //{
+            //    kücük = sayi1;
+            //}
+            //else if (sayi2 < sayi3)
+            //{
+            //    kücük = sayi2;
+            //}
+            //else
+            //{
+            //    kücük = sayi3;
+            //}
+
+            //Console.WriteLine("En büyük ve en küçük sayının toplamı ={0}" , kücük + büyük);
+            //Console.ReadLine();
             //----------------------------------------------------------------------------------------
 
             //Örnek 4: Bir otoparka park eden taksinin 1 saati 5TL, minibüsün 1 saati 6TL, ticari aracın 1 saati 6.5TL dir.
@@ -56,35 +56,35 @@ namespace Denemeler
             //Buna göre klavyeden girilen araba tipi ve kalınan saat bilgisi girildikten sonra
             //ekrana ödenecek otopark ücretini hesaplayan programın kodlarını yazınız.
 
-            int taksi = 5;
-            int minibus = 6;
-            double ticari = 6.5;
-            int aracTipi;
-            int kalinanSaat;
-            double ucret;
-            Console.WriteLine("Lütfen araç tipi giriniz. 1= Taksi, 2= Minibus, 3= Ticari");
+            //int taksi = 5;
+            //int minibus = 6;
+            //double ticari = 6.5;
+            //int aracTipi;
+            //int kalinanSaat;
+            //double ucret;
+            //Console.WriteLine("Lütfen araç tipi giriniz. 1= Taksi, 2= Minibus, 3= Ticari");
 
-            aracTipi = Int32.Parse(Console.ReadLine());
+            //aracTipi = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Lütfen kaç saat kaldığınızı giriniz");
+            //Console.WriteLine("Lütfen kaç saat kaldığınızı giriniz");
 
-            kalinanSaat = Int32.Parse(Console.ReadLine());
-            if (aracTipi == 1)
-            {
-                ucret = taksi + ((kalinanSaat - 1) * (taksi + (taksi * 0.2)));
-                Console.WriteLine("Ödemeniz gereken ücret ={0}", ucret);
-            }
-            else if (aracTipi == 2)
-            {
-                ucret = minibus + ((kalinanSaat - 1) * (minibus + (minibus * 0.215)));
-                Console.WriteLine("Ödemeniz gereken ücret ={0} ", ucret);
-            }
-            else if (aracTipi == 3)
-            {
-                ucret = ticari + ((kalinanSaat - 1) * (ticari + (ticari * 0.25)));
-                Console.WriteLine("Ödemeniz gereken ücret ={0} ",  ucret);
-            }
-            else Console.WriteLine("Lütfen araç tipini doğru giriniz!");
+            //kalinanSaat = Int32.Parse(Console.ReadLine());
+            //if (aracTipi == 1)
+            //{
+            //    ucret = taksi + ((kalinanSaat - 1) * (taksi + (taksi * 0.2)));
+            //    Console.WriteLine("Ödemeniz gereken ücret ={0}", ucret);
+            //}
+            //else if (aracTipi == 2)
+            //{
+            //    ucret = minibus + ((kalinanSaat - 1) * (minibus + (minibus * 0.215)));
+            //    Console.WriteLine("Ödemeniz gereken ücret ={0} ", ucret);
+            //}
+            //else if (aracTipi == 3)
+            //{
+            //    ucret = ticari + ((kalinanSaat - 1) * (ticari + (ticari * 0.25)));
+            //    Console.WriteLine("Ödemeniz gereken ücret ={0} ",  ucret);
+            //}
+            //else Console.WriteLine("Lütfen araç tipini doğru giriniz!");
 
             //------------------------------------------------------------------------------------------
 
@@ -221,6 +221,37 @@ namespace Denemeler
             //{
             //    Console.WriteLine("Başarısız");
             //}
+
+            //------------------------------------------------------------------------------
+            //Örnek 9: Klavyeden girilen metnin kaç kelimeden oluştuğunu bulan örnek:
+
+            //Console.WriteLine("Lütfen bir cümle yazınız");
+            //string cumle = Console.ReadLine();
+            //string[] words = cumle.Split(' ');
+
+            //Console.WriteLine("Yazdığınız cümle kelimeden oluşmaktadır." + words.Length);
+            //---------------------------------------------------------------------------------------
+
+            //Örnek 11:  Girilen String ifadede boşluk karakterine kadar olan kısmı yazdıran örnek:
+
+
+            //string cumle;
+
+            //Console.WriteLine("Lütfen bir metin giriniz");
+            //cumle = Console.ReadLine();
+            //string[] kelime = cumle.Split(' ');
+
+            //Console.WriteLine(kelime[0]);
+            //-----------------------------------------
+
+            //string metin;
+            //Console.Write("Metni Girin : ");
+            //metin = Console.ReadLine();
+            //int no = metin.IndexOf(' ');
+            //Console.WriteLine(metin.Substring(0, no));
+            //Console.ReadKey();
+            //-----------------------------------------------------------------------------------
+
 
         }
     }
